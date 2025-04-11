@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.home-content {
+  margin-left: 70px;
+}
+
+.home-content h1 {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.home-content p {
+  font-size: 18px;
+}
+
+.contacts {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.contacts .contact-icon {
+  color: white;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-image: url("images/bac1.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
