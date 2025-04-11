@@ -8,6 +8,8 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
+/* Home section */
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -76,4 +78,53 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 0 20px;
+}
+
+/* About section */
+
+.about-section {
+  flex-wrap: wrap; /* Allows content of about section to wrap when the screen is small */
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #9c9898;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h3 {
+  font-size: 20px;
+  color: #292626;
+}
+
+.about-text h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.about-image {
+  flex: 1;
+  text-align: right;
+}
+
+.about-image img {
+  min-width: 200px;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
