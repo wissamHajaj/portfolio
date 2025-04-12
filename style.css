@@ -19,6 +19,7 @@ body {
   width: 100%;
   background-color: black;
   padding: 10px 0;
+  overflow: auto;
   z-index: 1;
 }
 
@@ -284,7 +285,7 @@ body {
 
 .project-card {
   width: 55%;
-  height: 200px;
+  height: auto;
   border-radius: 10px;
   background-color: #d3d9dc;
   padding: 25px;
@@ -355,4 +356,23 @@ body {
 .info-list li {
   font-size: 16px;
   margin-bottom: 8px;
+}
+
+@media (max-width: 780px) {
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-card,
+  .gallery,
+  .skill-card {
+    width: 100%;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+  }
 }
