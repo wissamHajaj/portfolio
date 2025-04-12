@@ -208,7 +208,8 @@ body {
   flex-wrap: wrap;
 }
 
-.skills-section .section-title {
+.skills-section .section-title,
+.projects-section .section-title {
   width: 100%;
   background-color: #191919;
   padding: 15px 20px;
@@ -219,7 +220,7 @@ body {
 }
 
 .skill-card {
-  background-color: #525a60;
+  background-color: #95a5ad;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 330px;
   padding: 20px;
@@ -261,4 +262,67 @@ body {
 .skill-card:hover {
   transform: translateY(5px);
   background-color: rgb(153, 159, 164);
+}
+
+/* Projects section */
+
+.projects-section {
+  padding: 0 25px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 10px;
+  gap: 5px;
+}
+
+.project-card {
+  width: 55%;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #d3d9dc;
+  padding: 25px;
+  max-width: 700px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #252525;
+}
+
+.project-card p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.tech {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech li {
+  background-color: #3177a9;
+  padding: 5px 10px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  max-height: 100%;
+  overflow-x: auto; /* scroll along x-axis */
+}
+
+.gallery img {
+  height: 200px;
+  border-radius: 10px;
 }
