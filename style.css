@@ -147,7 +147,7 @@ body {
   max-width: 45%;
 }
 
-.title {
+.education-section .title {
   font-size: 30px;
   text-align: center;
   color: #5d5858;
@@ -158,7 +158,7 @@ body {
   padding: 10px 0;
   border-bottom: solid rgb(46, 46, 162) 5px;
 }
-.section-title {
+.education-section .section-title {
   background-color: #191919;
   padding: 20px;
   border-radius: 10px;
@@ -193,4 +193,72 @@ body {
   /* take only the first p from the card content div */
   font-weight: bold;
   color: #375164;
+}
+
+/* Skills section */
+
+.skills-section {
+  padding: 10px 35px;
+}
+
+.skills-section .skills-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.skills-section .section-title {
+  width: 100%;
+  background-color: #191919;
+  padding: 15px 20px;
+  color: #5d5858;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.skill-card {
+  background-color: #525a60;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 15px 0;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font: 12px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 15px;
+  background-color: #beb7b7;
+  border-radius: 25px;
+}
+
+.progress {
+  width: 90%;
+  background-color: rgb(28, 117, 219);
+  border-radius: 10px;
+  height: 15px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-card:hover {
+  transform: translateY(5px);
+  background-color: rgb(153, 159, 164);
 }
