@@ -128,3 +128,69 @@ body {
   aspect-ratio: 1/1;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Education section */
+
+.education-section {
+  flex-wrap: wrap;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card {
+  flex: 1;
+  height: auto;
+  background-color: #cdc9c9;
+  border-radius: 10px;
+  max-width: 45%;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  color: #5d5858;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: solid rgb(46, 46, 162) 5px;
+}
+.section-title {
+  background-color: #191919;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.major-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  text-align: center;
+  padding: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #292828;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #555;
+}
+.card-content p:first-of-type {
+  /* take only the first p from the card content div */
+  font-weight: bold;
+  color: #375164;
+}
