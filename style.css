@@ -209,9 +209,10 @@ body {
 }
 
 .skills-section .section-title,
-.projects-section .section-title {
+.projects-section .section-title,
+.additional-info-section .section-title {
   width: 100%;
-  background-color: #191919;
+  background-color: #d8d8d8;
   padding: 15px 20px;
   color: #5d5858;
   font-weight: bold;
@@ -325,4 +326,29 @@ body {
 .gallery img {
   height: 200px;
   border-radius: 10px;
+}
+
+/* Additional Information section */
+.additional-info-section {
+  padding: 30px 20px;
+  margin-top: 10px;
+  background-color: #f4f4f4;
+}
+
+.info-sction {
+  padding: 15px 20px;
+}
+
+.info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-list {
+  list-style-type: none;
+}
+
+.info-list li {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
