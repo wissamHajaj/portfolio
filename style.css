@@ -12,6 +12,10 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
+section {
+  padding: 20px
+}
+
 .menu-btn {
   color: rgb(102, 98, 98);
   cursor: pointer;
@@ -149,7 +153,6 @@ body {
 
 .education-section {
   flex-wrap: wrap;
-  padding: 40px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -212,10 +215,6 @@ body {
 }
 
 /* Skills section */
-
-.skills-section {
-  padding: 10px 35px;
-}
 
 .skills-section .skills-cards {
   display: flex;
@@ -283,10 +282,6 @@ body {
 
 /* Projects section */
 
-.projects-section {
-  padding: 0 25px;
-}
-
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -346,7 +341,6 @@ body {
 
 /* Additional Information section */
 .additional-info-section {
-  padding: 30px 20px;
   margin-top: 10px;
   background-color: #f4f4f4;
 }
