@@ -12,25 +12,34 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
-/* Home section */
+.menu-btn {
+  color: rgb(102, 98, 98);
+  cursor: pointer;
+  display: none;
+}
 
 .navbar {
-  position: fixed;
+  /* align-items: center; */
+  display: flex;
   width: 100%;
   background-color: black;
   padding: 10px 0;
   overflow: auto;
   z-index: 1;
+  width: 100%;
+  position: fixed;
 }
 
 .nav-links {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  flex: 1;
 }
 
 .nav-links li {
-  margin: 0 20px;
+  margin: 0 10px;
+  padding: 8px;
 }
 
 .nav-links a {
@@ -40,10 +49,12 @@ body {
   padding: 5px 10px;
 }
 
-.nav-links a:hover {
+.nav-links li:hover {
   background-color: #555;
   border-radius: 5px;
 }
+
+/* Home section */
 
 .home-content {
   margin-left: 70px;
@@ -358,6 +369,14 @@ body {
   margin-bottom: 8px;
 }
 
+@media (min-width: 781px) {
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 780px) {
   .projects-container {
     flex-direction: column;
@@ -369,10 +388,29 @@ body {
     width: 100%;
   }
 
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(61, 60, 60);
+    position: fixed;
+    top: 47px;
+    padding: 2px 0px;
+  }
+
   .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    padding: 2px;
+    font-size: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }
