@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  padding: 20px
+  padding: 20px;
 }
 
 .menu-btn {
@@ -160,10 +160,8 @@ section {
 
 .card {
   flex: 1;
-  height: auto;
   background-color: #cdc9c9;
   border-radius: 10px;
-  max-width: 45%;
 }
 
 .education-section .title {
@@ -181,7 +179,6 @@ section {
   background-color: #191919;
   padding: 20px;
   border-radius: 10px;
-  max-width: 50%;
 }
 
 .major-image {
@@ -406,5 +403,15 @@ section {
 
   .nav-links.active {
     display: flex;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 100%;
+  }
+
+  .education-section {
+    flex-direction: column;
   }
 }
